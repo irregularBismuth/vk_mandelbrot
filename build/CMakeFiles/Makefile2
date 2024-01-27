@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/irregular/raytracer/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/raytracer.dir/all
+all: CMakeFiles/mandelbrot.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/raytracer.dir/clean
+clean: CMakeFiles/mandelbrot.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/raytracer.dir
+# Target rules for target CMakeFiles/mandelbrot.dir
 
 # All Build rule for target.
-CMakeFiles/raytracer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irregular/raytracer/build/CMakeFiles --progress-num=1,2 "Built target raytracer"
-.PHONY : CMakeFiles/raytracer.dir/all
+CMakeFiles/mandelbrot.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irregular/raytracer/build/CMakeFiles --progress-num=1,2 "Built target mandelbrot"
+.PHONY : CMakeFiles/mandelbrot.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/raytracer.dir/rule: cmake_check_build_system
+CMakeFiles/mandelbrot.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/irregular/raytracer/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/raytracer.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mandelbrot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/irregular/raytracer/build/CMakeFiles 0
-.PHONY : CMakeFiles/raytracer.dir/rule
+.PHONY : CMakeFiles/mandelbrot.dir/rule
 
 # Convenience name for target.
-raytracer: CMakeFiles/raytracer.dir/rule
-.PHONY : raytracer
+mandelbrot: CMakeFiles/mandelbrot.dir/rule
+.PHONY : mandelbrot
 
 # clean rule for target.
-CMakeFiles/raytracer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/clean
-.PHONY : CMakeFiles/raytracer.dir/clean
+CMakeFiles/mandelbrot.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/clean
+.PHONY : CMakeFiles/mandelbrot.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

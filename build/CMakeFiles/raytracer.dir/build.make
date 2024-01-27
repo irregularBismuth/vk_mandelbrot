@@ -69,28 +69,28 @@ include CMakeFiles/raytracer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/raytracer.dir/flags.make
 
-CMakeFiles/raytracer.dir/main.cpp.o: CMakeFiles/raytracer.dir/flags.make
-CMakeFiles/raytracer.dir/main.cpp.o: ../main.cpp
-CMakeFiles/raytracer.dir/main.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/irregular/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raytracer.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/main.cpp.o -MF CMakeFiles/raytracer.dir/main.cpp.o.d -o CMakeFiles/raytracer.dir/main.cpp.o -c /home/irregular/raytracer/main.cpp
+CMakeFiles/raytracer.dir/source/src/main.cpp.o: CMakeFiles/raytracer.dir/flags.make
+CMakeFiles/raytracer.dir/source/src/main.cpp.o: ../source/src/main.cpp
+CMakeFiles/raytracer.dir/source/src/main.cpp.o: CMakeFiles/raytracer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/irregular/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raytracer.dir/source/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/source/src/main.cpp.o -MF CMakeFiles/raytracer.dir/source/src/main.cpp.o.d -o CMakeFiles/raytracer.dir/source/src/main.cpp.o -c /home/irregular/raytracer/source/src/main.cpp
 
-CMakeFiles/raytracer.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/irregular/raytracer/main.cpp > CMakeFiles/raytracer.dir/main.cpp.i
+CMakeFiles/raytracer.dir/source/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/source/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/irregular/raytracer/source/src/main.cpp > CMakeFiles/raytracer.dir/source/src/main.cpp.i
 
-CMakeFiles/raytracer.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/irregular/raytracer/main.cpp -o CMakeFiles/raytracer.dir/main.cpp.s
+CMakeFiles/raytracer.dir/source/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/source/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/irregular/raytracer/source/src/main.cpp -o CMakeFiles/raytracer.dir/source/src/main.cpp.s
 
 # Object files for target raytracer
 raytracer_OBJECTS = \
-"CMakeFiles/raytracer.dir/main.cpp.o"
+"CMakeFiles/raytracer.dir/source/src/main.cpp.o"
 
 # External object files for target raytracer
 raytracer_EXTERNAL_OBJECTS =
 
-raytracer: CMakeFiles/raytracer.dir/main.cpp.o
+raytracer: CMakeFiles/raytracer.dir/source/src/main.cpp.o
 raytracer: CMakeFiles/raytracer.dir/build.make
 raytracer: /usr/lib/x86_64-linux-gnu/libvulkan.so
 raytracer: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3

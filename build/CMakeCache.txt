@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=raytracer
+CMAKE_PROJECT_NAME:STATIC=mandelbrot
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -223,6 +223,15 @@ Vulkan_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvulkan.so
 
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/glfw3
+
+//Value Computed by CMake
+mandelbrot_BINARY_DIR:STATIC=/home/irregular/raytracer/build
+
+//Value Computed by CMake
+mandelbrot_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+mandelbrot_SOURCE_DIR:STATIC=/home/irregular/raytracer
 
 //Value Computed by CMake
 raytracer_BINARY_DIR:STATIC=/home/irregular/raytracer/build

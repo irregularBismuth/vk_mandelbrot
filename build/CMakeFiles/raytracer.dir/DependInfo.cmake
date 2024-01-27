@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/irregular/raytracer/main.cpp" "CMakeFiles/raytracer.dir/main.cpp.o" "gcc" "CMakeFiles/raytracer.dir/main.cpp.o.d"
+  "/home/irregular/raytracer/source/src/main.cpp" "CMakeFiles/raytracer.dir/source/src/main.cpp.o" "gcc" "CMakeFiles/raytracer.dir/source/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

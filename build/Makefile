@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named raytracer
+# Target rules for targets named mandelbrot
 
 # Build rule for target.
-raytracer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raytracer
-.PHONY : raytracer
+mandelbrot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mandelbrot
+.PHONY : mandelbrot
 
 # fast build rule for target.
-raytracer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/build
-.PHONY : raytracer/fast
+mandelbrot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/build
+.PHONY : mandelbrot/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+source/src/main.o: source/src/main.cpp.o
+.PHONY : source/src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/main.cpp.o
-.PHONY : main.cpp.o
+source/src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/source/src/main.cpp.o
+.PHONY : source/src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+source/src/main.i: source/src/main.cpp.i
+.PHONY : source/src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/main.cpp.i
-.PHONY : main.cpp.i
+source/src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/source/src/main.cpp.i
+.PHONY : source/src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+source/src/main.s: source/src/main.cpp.s
+.PHONY : source/src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/main.cpp.s
-.PHONY : main.cpp.s
+source/src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/source/src/main.cpp.s
+.PHONY : source/src/main.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... raytracer"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... mandelbrot"
+	@echo "... source/src/main.o"
+	@echo "... source/src/main.i"
+	@echo "... source/src/main.s"
 .PHONY : help
 
 
