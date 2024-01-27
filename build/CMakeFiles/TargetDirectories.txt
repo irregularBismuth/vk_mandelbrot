@@ -1,3 +1,0 @@
-/home/irregular/raytracer/build/CMakeFiles/mandelbrot.dir
-/home/irregular/raytracer/build/CMakeFiles/edit_cache.dir
-/home/irregular/raytracer/build/CMakeFiles/rebuild_cache.dir
