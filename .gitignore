@@ -1,3 +1,4 @@
 build/*
 run_script.sh
 compile_commands.json
+.cache/
