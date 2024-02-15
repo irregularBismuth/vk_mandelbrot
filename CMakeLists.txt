@@ -19,7 +19,9 @@ include_directories(${PROJECT_SOURCE_DIR}/source/include)
 add_executable(mandelbrot 
               source/src/main.cpp
               source/src/glfw_initialization.cpp # Add this line # Add this line
-  ) 
+              source/src/glfw_monitor.cpp
+            ) 
+
 
   target_precompile_headers(mandelbrot PRIVATE "${PROJECT_SOURCE_DIR}/source/include/precomp.h")
 # Link Vulkan library
