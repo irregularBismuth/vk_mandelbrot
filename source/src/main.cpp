@@ -8,6 +8,7 @@
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
 #include <glm/vec4.hpp>
 #include <glm/mat4x4.hpp>
+#include "precomp.h"
 #include "glfw_initialization.h"
 #include "glfw_monitor.h"
 std::int32_t main(std::int32_t argc,gsl::zstring* argv) {  
@@ -16,7 +17,7 @@ std::int32_t main(std::int32_t argc,gsl::zstring* argv) {
   //glfwCreateWindow(800, 600, "vulkan engine",nullptr, nullptr);
   //gsl::final_action _cleanup([window]()->void {glfwDestroyWindow(window);});
   window.MoveToMonitor(1);
-
+  
   while (!window.ShouldClose()) {
     glfwPollEvents();
   }

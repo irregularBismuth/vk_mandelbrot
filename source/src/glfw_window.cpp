@@ -3,6 +3,8 @@
 
 namespace veng {
   Window::Window(gsl::czstring name, glm::ivec2 size) {
+    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
     window_ = glfwCreateWindow(size.x,size.y,name,nullptr,nullptr);  
     if (window_ == nullptr) {
       std::exit(EXIT_FAILURE);

@@ -2,7 +2,7 @@
 #define GLFW_INIT
 #define GLFW_INCLUDE_VULKAN
 #include "GLFW/glfw3.h"
-
+#include "precomp.h"
 namespace veng {
   struct GlfwIntitialization {
     public:
