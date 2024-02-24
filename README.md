@@ -11,5 +11,5 @@ make
 ```
 run it on linux via 
 ```shell
-./mandlebrot
+./mandelbrot
 ```
