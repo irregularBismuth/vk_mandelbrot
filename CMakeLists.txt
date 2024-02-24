@@ -20,6 +20,7 @@ add_executable(mandelbrot
               source/src/main.cpp
               source/src/glfw_initialization.cpp # Add this line # Add this line
               source/src/glfw_monitor.cpp
+              source/src/glfw_window.cpp
             ) 
 
 

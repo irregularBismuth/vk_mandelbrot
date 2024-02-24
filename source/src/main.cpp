@@ -1,5 +1,4 @@
-#include "glfw_monitor.h"
-#include <GLFW/glfw3.h>
+#include "glfw_window.h"
 #include <cstdlib>
 #include <glm/ext/vector_float2.hpp>
 #include <gsl/pointers>
@@ -11,20 +10,14 @@
 #include <glm/mat4x4.hpp>
 #include "glfw_initialization.h"
 #include "glfw_monitor.h"
-std::int32_t main(std::int32_t argc,gsl::zstring* argv) { 
-   
-  
-  veng::GlfwIntitialization _glfw;
-  gsl::not_null<GLFWwindow*> window= glfwCreateWindow(800, 600, "vulkan engine",nullptr, nullptr);
-  gsl::final_action _cleanup([window]()->void {glfwDestroyWindow(window);});
-  
-  gsl::span<GLFWmonitor*> monitors = veng::GetMonitors();
-  if(monitors.size() > 1) {
-    veng::MoveWindowToMonitor(window,monitors[0]);
-  } 
+std::int32_t main(std::int32_t argc,gsl::zstring* argv) {  
+  const veng::GlfwIntitialization _glfw;
+  veng::Window window("VkEngine",{800,600});
+  //glfwCreateWindow(800, 600, "vulkan engine",nullptr, nullptr);
+  //gsl::final_action _cleanup([window]()->void {glfwDestroyWindow(window);});
+  window.MoveToMonitor(1);
 
-
-  while (!glfwWindowShouldClose(window)) {
+  while (!window.ShouldClose()) {
     glfwPollEvents();
   }
 
