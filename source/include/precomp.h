@@ -1,6 +1,6 @@
 #ifndef PRECOMPILE_H
 #define PRECOMPILE_H
-
+#include "utils.h"
 #include <gsl/gsl>
 #include <iostream>
 #include <cstdint>
@@ -10,6 +10,6 @@
 #include <string>
 #include <string_view>
 #include <vector>
-
+#include <functional>
 #include <algorithm>
 #endif //PRECOMPILE_H

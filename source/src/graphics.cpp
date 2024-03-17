@@ -1,7 +1,6 @@
 #include "graphics.h"
-#include <algorithm>
-#include <vulkan/vulkan_core.h>
-#include <iostream>
+#include <cstdlib>
+#include <functional>
 namespace veng {
 
 Graphics::Graphics(gsl::not_null<Window*> window) : window_(window) {
@@ -19,15 +18,25 @@ void Graphics::InitilizeVulkan() {
   CreateInstance();
 }
 
+bool Graphics::AllExtensionsSupported(gsl::span<gsl::czstring> extensions) {
+  std::vector<VkExtensionProperties> supported_extensions = GetSupportedInstanceExtensions();
+  return std::all_of(extensions.begin(),extensions.end(),std::bind_front(IsExtensionSupported,supported_extensions)));
+}   
+
+
+bool Graphics::IsExtensionSupported(gsl::span<VkExtensionProperties> extensions,gsl::czstring name) {
+  return std::any_of(
+    extensions.begin(),extensions.end(),std::bind_front(ExtensionMatchesName,name)
+  );
+}  
+
+bool Graphics::ExtensionMatchesName(gsl::czstring name,const VkExtensionProperties& extension) {
+  return veng::streq(extension.extensionName,name);
+} 
+
 void Graphics::CreateInstance() {
   gsl::span<gsl::czstring> suggested_extensions = GetSuggestedExtensions();
-  std::vector<VkExtensionProperties> supported_extensions = GetSupportedInstanceExtensions();
-  auto is_extension_supported = [&supported_extensions](gsl::czstring name) {
-      return std::any_of(supported_extensions.begin(),supported.end(),[name](const VkExtensionProperties& property){
-      return std::strcmp(property.extensionName,name) == 0;
-    });
-  }
-  if(!std::all_of(suggested_extensions.begin(),suggested_extensions.end(),is_extension_supported)) {
+  if(!AllExtensionsSupported(suggested_extensions)) {
     std::exit(EXIT_FAILURE);
   }
   VkApplicationInfo app_info = {};
