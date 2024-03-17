@@ -11,7 +11,7 @@
 #include "precomp.h"
 #include "glfw_initialization.h"
 #include "glfw_monitor.h"
-std::int32_t main(std::int32_t argc,gsl::zstring* argv) {  
+std::int32_t main(std::int32_t argc,gsl::zstring* argv) { 
   const veng::GlfwIntitialization _glfw;
   veng::Window window("VkEngine",{800,600});
   //glfwCreateWindow(800, 600, "vulkan engine",nullptr, nullptr);

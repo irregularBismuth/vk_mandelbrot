@@ -1,5 +1,7 @@
 #ifndef PRECOMPILE_H
 #define PRECOMPILE_H
+
+#define NDEBUG 
 #include "utils.h"
 #include <gsl/gsl>
 #include <iostream>
