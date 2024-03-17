@@ -11,4 +11,5 @@
 #include <string_view>
 #include <vector>
 
+#include <algorithm>
 #endif //PRECOMPILE_H

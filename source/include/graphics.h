@@ -11,7 +11,9 @@ namespace veng {
       ~Graphics();
      
     private:
+      
 
+      std::vector<VkExtensionProperties> GetSupportedInstanceExtensions();
       gsl::span<gsl::czstring> GetSuggestedExtensions();   
       void CreateInstance();
       void InitilizeVulkan();
